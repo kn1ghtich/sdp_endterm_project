@@ -45,7 +45,8 @@ public class SkateRentalFacade {
                     time = Integer.parseInt(scanner.nextLine());
                 }
                 double price = paymentTariffStrategy.pay(skateboard, time);
-                System.out.print("Do you want to continue? (y/n): ");
+
+                System.out.print("It will cost: " + price +"\nDo you want to continue? (y/n): ");
 
                 if (scanner.nextLine().equalsIgnoreCase("y")) {
                     if ((cash -price) < 0){
