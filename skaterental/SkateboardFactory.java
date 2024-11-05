@@ -13,7 +13,7 @@ public class SkateboardFactory {
     public SkateboardFactory(){
         boards.put("Cruiser", new Cruiser());
         boards.put("Longboard", new Longboard());
-        boards.put("Classic", new Longboard());
+        boards.put("Classic", new Classic());
     }
 
     public Skateboard createSkateboard(String type) {
